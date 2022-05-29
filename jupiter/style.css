@@ -31,6 +31,11 @@ canvas {
     
 }
 
+ul {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
 
 button {
     transform: translateX(-50%);
@@ -40,10 +45,10 @@ button {
     padding: 0.5rem 0.9em;
     background: #000000;
     color: white;
-    /* -webkit-font-smoothing: antialiased; */
+    -webkit-font-smoothing: antialiased;
     font-weight: bold;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 button:hover {
