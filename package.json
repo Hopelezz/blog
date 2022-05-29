@@ -1,11 +1,27 @@
 {
-    "name": "blog",
-    "description": "blog project app",
-    "version": "18.2.0",
-    "engines": {
-        "node": "16.x"
-    },
-    "dependencies": {
-        "figlet": "^1.5.2"
-    }
+  "name": "blog",
+  "description": "blog project app",
+  "version": "18.2.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "figlet": "^1.5.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hopelezz/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hopelezz/blog/issues"
+  },
+  "homepage": "https://github.com/Hopelezz/blog#readme"
 }
