@@ -117,7 +117,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }else if (page == '/jupiter/script.js'){
-    fs.readFile('/jupiter/script.js', function(err, data) {
+    fs.readFile('jupiter/script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
