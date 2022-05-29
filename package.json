@@ -3,6 +3,9 @@
     "description": "blog project app",
     "version": "18.2.0",
     "engines": {
-      "node": "16.x"
+        "node": "16.x"
+    },
+    "dependencies": {
+        "figlet": "^1.5.2"
     }
-  }
+}
