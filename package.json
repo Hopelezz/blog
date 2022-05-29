@@ -1,0 +1,8 @@
+{
+    "name": "blog",
+    "description": "blog project app",
+    "version": "18.2.0",
+    "engines": {
+      "node": "16.x"
+    }
+  }
