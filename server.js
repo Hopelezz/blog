@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  } else if (page == '/blog/class4/style.css'){
+  } else if (page == '/class4/style.css'){
     fs.readFile('class4/style.css', function(err, data) {
       res.write(data);
       res.end();
@@ -39,15 +39,15 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  }else if (page == '/blog/space/script.js'){
-    fs.readFile('blog/space/script.js', function(err, data) {
+  }else if (page == '/space/script.js'){
+    fs.readFile('space/script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
     });
   }
-  else if (page == '/blog/space/style.css'){
-    fs.readFile('blog/space/style.css', function(err, data) {
+  else if (page == '/space/style.css'){
+    fs.readFile('/space/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
@@ -55,20 +55,20 @@ const server = http.createServer((req, res) => {
 
 //computer page
   else if (page == '/computer') {
-    fs.readFile('blog/room/dist/index.html', function(err, data) {
+    fs.readFile('room/dist/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
     });
   }else if (page == '/room/dist/script.js'){
-    fs.readFile('blog/room/dist/script.js', function(err, data) {
+    fs.readFile('room/dist/script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
     });
   }
   else if (page == '/room/dist/style.css'){
-    fs.readFile('blog/room/dist/style.css', function(err, data) {
+    fs.readFile('room/dist/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
@@ -76,20 +76,20 @@ const server = http.createServer((req, res) => {
 
 //404 Page  
   else if (page == '/404') {
-    fs.readFile('blog/404/index.html', function(err, data) {
+    fs.readFile('/404/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end(); 
     });
-  }else if (page == '/blog/404/script.js'){
+  }else if (page == '/404/script.js'){
     fs.readFile('404/script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
     });
   }
-  else if (page == '/blog/404/style.css'){
-    fs.readFile('blog/404/style.css', function(err, data) {
+  else if (page == '/404/style.css'){
+    fs.readFile('/404/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
 
 //blog page
   else if (page == '/blog') {
-    fs.readFile('blog/blog/index.html', function(err, data) {
+    fs.readFile('/blog/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
@@ -117,7 +117,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   }else if (page == '/jupiter/script.js'){
-    fs.readFile('jupiter/script.js', function(err, data) {
+    fs.readFile('/jupiter/script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
