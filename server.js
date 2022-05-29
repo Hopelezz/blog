@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 
 //class4 page
   else if (page == '/aboutme') {
-    fs.readFile('blog/class4/index.html', function(err, data) {
+    fs.readFile('class4/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
 
 //spaceglobe page
   else if (page == '/space') {
-    fs.readFile('blog/space/index.html', function(err, data) {
+    fs.readFile('space/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
@@ -47,7 +47,7 @@ const server = http.createServer((req, res) => {
     });
   }
   else if (page == '/space/style.css'){
-    fs.readFile('/space/style.css', function(err, data) {
+    fs.readFile('space/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
@@ -76,7 +76,7 @@ const server = http.createServer((req, res) => {
 
 //404 Page  
   else if (page == '/404') {
-    fs.readFile('/404/index.html', function(err, data) {
+    fs.readFile('404/index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end(); 
